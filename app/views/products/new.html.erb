@@ -1,0 +1,10 @@
+<%= form_for @product, url: products_path do |f| %>
+<strong>title</strong><br>
+<%= f.text_field :title %><br>
+<strong>description</strong><br>
+<%= f.text_field :description %><br>
+<strong>price</strong><br>
+<%= f.text_field :price %><br>
+<%= f.file_field :photos, multiple: true %>
+<%= f.submit "Create" %>
+<% end %>
