@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
 	mount_uploaders :photos, PhotosUploader
-	serialize :avatars
+	serialize :photos, JSON
 	belongs_to :user
 end
